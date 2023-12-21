@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-todo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "pm2 start ecosystem.config.cjs",
+    "stop": "pm2 stop ecosystem.config.cjs && pm2 delete ecosystem.config.cjs"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.11.1",
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.12",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.44.1",
+    "pm2": "^5.3.0",
+    "trpc-nuxt": "^0.10.15",
+    "zod": "^3.22.4"
+  }
+}
