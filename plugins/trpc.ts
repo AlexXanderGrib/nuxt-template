@@ -15,7 +15,7 @@ export default defineNuxtPlugin(() => {
       httpBatchLink({
         url: "/api/trpc",
         headers,
-        maxURLLength: 2048
+        maxURLLength: 2048,
       })
     ]
   });

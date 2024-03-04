@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {},
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/eslint-module"],
   devtools: { enabled: true },
   colorMode: {
     classSuffix: ""
@@ -14,17 +14,12 @@ export default defineNuxtConfig({
     transpile: ["trpc-nuxt"]
   },
 
-  devServer: {
-    host: "0.0.0.0"
-  },
-
   nitro: {
     preset: "node-cluster",
 
     esbuild: {
       options: {
-        target: "esnext",
-  
+        target: "esnext"
       }
     }
   }

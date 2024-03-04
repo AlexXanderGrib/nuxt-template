@@ -7,8 +7,8 @@
 
 <template>
   <div
-    class="flex flex-col px-8 justify-center items-center gap-2 min-h-[400px]"
     v-if="error"
+    class="flex flex-col px-8 justify-center items-center gap-2 min-h-[400px]"
   >
     <h1 class="text-4xl md:text-6xl">
       Error
@@ -17,7 +17,7 @@
       }}</span>
     </h1>
     <p class="opacity-70">{{ error.message }}</p>
-    <UButton @click="handleError" variant="outline" size="xl">
+    <UButton variant="outline" size="xl" @click="handleError">
       Go back home
     </UButton>
   </div>
